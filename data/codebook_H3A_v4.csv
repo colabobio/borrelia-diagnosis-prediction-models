@@ -1,0 +1,65 @@
+COLUMN,VALUE CODE,EXPLANATION,Modifications made by ZCL,YEAR(S) INFO AVAILABLE
+Age,integer,age (continuous),,2018-2019
+Sexe,"F = female, M = male",,,2018-2019
+Lieu actuel de ésidence_category,categorical,place of residence,binned based on inside city of Thies or outside city of Thies by Zoe/Marietou,2018-2019
+Temperature,integer,"body temperature, degrees celcius  ",,2018-2019
+Temperature_category,categorical,binned as high or normal,"binned by ZCL: for all ages <38 non febrile, >= 38 = fever; for age < 3, >= 39 severe_fever, for age >= 3, >39.5 severe_fever",2018-2020
+NbreJrsFievre,integer,days of fever,,2018-2019
+Rythme cardiaque,integer,heart rate ,,2018-2019
+Rythme cardiaque_category,categorical,"binned as high, low, normal",binned by ZCL based on PALS Guidelines 2015 https://www.pedscases.com/sites/default/files/Vitals%20Chart_PedsCases%20Notes.pdf,2018-2020
+Antibiotiques pris,"1 == yes, 2 == no",prior antibiotics,,2018-2019
+Antipaludiques pris,"1 == yes, 2 == no",prior antimalarials,,2018-2019
+Diagnostic paludisme recu,"1 == yes, 2 == no",prior malaria diagnostic,,2018-2019
+enceinte,"1 == yes, 2 == no",pregnant,,2018-2019
+sympt_mal_tete,"1 == yes, 2 == no",symptom: headache,,2018-2019
+sympt_courbatures,"1 == yes, 2 == no",symptom: body aches,,2018-2019
+sympt_vertiges,"1 == yes, 2 == no",symptom: dizziness,,2018-2019
+sympt_vomissements,"1 == yes, 2 == no",symptom: vomitting,,2018-2019
+sympt_fatigue_faiblesse,"1 == yes, 2 == no",symptom: fatigue/weakness,,2018-2019
+sympt_mal_dos,"1 == yes, 2 == no",symptom: sore back,,2018-2019
+sympt_douleur_thoracique,"1 == yes, 2 == no",symptom: chest pain,,2018-2019
+sympt_difficulte_respirer,"1 == yes, 2 == no",symptom: difficulty breathing,,2018-2019
+sympt_eruption_cutanee,"1 == yes, 2 == no",symptom: rash,,2018-2019
+sympt_toux_maldegorge,"1 == yes, 2 == no",symptom: sore throat,,2018-2019
+sympt_inflammation,"1 == yes, 2 == no",symptom: swelling,,2018-2019
+sympt_saignement,"1 == yes, 2 == no",symptom: bleeding,,2018-2019
+sympt_convulsions,"1 == yes, 2 == no",symptom: seizures,,2018-2019
+sympt_perte_conaissance,"1 == yes, 2 == no",symptom: loss of consciousness,,2018-2019
+sympt_Prostration,"1 == yes, 2 == no",symptom: prostration,,2018-2019
+sympt_abdo_pain,"1 == yes, 2 == no",symptom_other: abdominal pain,,2018-2019
+sympt_dental,"1 == yes, 2 == no",symptom_other: dental cavity/pain,"added by ZCL based on free text responses to ""other symptoms""",2018-2019
+sympt_anorex,"1 == yes, 2 == no","symptom_other: anorexia (I interpret this as in the sense of not eating during their illness, rather than a clinical diagnosis of an eating disorder) ","added by ZCL based on free text responses to ""other symptoms""",2018-2019
+sympt_dysphagia,"1 == yes, 2 == no",symptom_other: dysphagia,"added by ZCL based on free text responses to ""other symptoms""",2018-2019
+sympt_wound,"1 == yes, 2 == no",symptom_other: open wound,"added by ZCL based on free text responses to ""other symptoms""",2018-2019
+sympt_eye_problem,"1 == yes, 2 == no",symptom_other: eye problem,"added by ZCL based on free text responses to ""other symptoms""",2018-2019
+glycemie,float,blood glucose,,2018-2019
+hemoglobine,float,hemoglobin,,2018-2019
+TDR_Resultat,"1 == yes, 2 == no",malaria RDT result,,2018-2019
+goutte_epaisse_Resultat,"1 == yes, 2 == no",thick blood smear malaria result,,2018-2019
+frottis_mince_Resultat,"1 == yes, 2 == no",thin blood smear malaria result,,2018-2019
+DensitePfalciparum_modified,integer,parasite density,ZCL assumed 0 if there was no value or if the value was 2 (because I believe this means negative -- these were all smear negative),2018-2019
+contact_pers_febrile,"1 == yes, 2 == no",exposure: contact with febrile person,,2018-2019
+contact_presence_rats,"1 == yes, 2 == no",exposure: contact with rats,,2018-2019
+voyage_fait,"1 == yes, 2 == no",exposure: recent travel,,2018-2019
+voyage_details_category,categorical,exposure: recent travel details,"ZCL binned these based on whether the destination was within the Thies region, outside the Thies region but inside Senegal, out outside of senegal",2018-2019
+saison,"seche == dry, pluie == wet",season of sample collection,,2018-2019
+WBC_COUNT,float,white blood cell count,,2019
+LYMPH_COUNT,float,lymphocyte count,,2019
+MID_COUNT,float,mid count,,2019
+GRAN_COUNT,float,granulocyte count,,2019
+LYMPH_PCT,float,lymphocyte percent,,2019
+MID_PCT,float,mid percent,,2019
+GRAN_PCT,float,granulocyte percent,,2019
+RBC_COUNT,float,red blood cell count,,2019
+HGB_COUNT,float,hemoglobin count,,2019
+HCT_PCT,float,hematocrit (percentage),,2019
+MCV,float,mean cellular volume,,2019
+MCH,float,mean corpuscular hemoblogin,,2019
+MCHC,float,mean corpuscular hemoblogin concentration,,2019
+RDW-CV,float,red cell distribution width- coefficient of variant,,2019
+RDW-SD,float,red cell distribution width- standard deviation,,2019
+PLT,float,platelet count,,2019
+MPV,float,mean platelet volume,,2019
+PDW,float,platelet distribution width,,2019
+PCT,float,platelet percent,,2019
+Borrelia,binary,"1 == positive, 0 == negative",,2018-2019
